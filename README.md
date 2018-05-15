@@ -35,7 +35,7 @@ My encryption works in this way:
 3. A random encryption factor is generated from a pool starting from -10 up to +10. This myst be known on both sides.
 4. Every integer number obtained in point 1 is divided in this way:
     ```
-    int / (key * factor)
+    int * (key * factor)
     ```
 5. The key nombers are translated into letters following an array of random letters that must be nown on both sides.
 6. At the end of every float will be attached the "key" translated into a letter, and a "padding" letter.
