@@ -233,7 +233,7 @@ def getEmail():
     mail.select('inbox')
     obj, data = mail.search(None, '(FROM "{}")'.format(emailUser),
                                   '(SUBJECT "{}")'.format(emailSubject))
-    typ, data = mail.fetch(data[0].split()[0],  'BODY[1]')
+    typ, data = mail.fetch(data[0].split()[-1],  'BODY[1]')
     body = data[0][1].replace(b'\r\n', b'').decode('utf8')
     log('Last email body: \'{}\''.format(body))
     mail.close()
