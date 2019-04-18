@@ -1,3 +1,5 @@
+NOTE: THIS CODE IS NOT WORKING AS IS, I AM REVIEWING IT AND WILL PUSH CHANGES SOON.
+
 # IP_server
 A python module to update a dynamic IP address of a server on more clients.
 
